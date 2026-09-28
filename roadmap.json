@@ -1,0 +1,70 @@
+{
+ "_about": "What is owed, as bounded packages with acceptance criteria. Nothing here is built.",
+ "packages": [
+  {
+   "id": "chakra-v2",
+   "title": "The v2 engine and the matching fixes inside project-ilm/chakra, beside v1",
+   "accept": "Chakra's own gate green; v1 core with zero diff; each matching fix carries a test that fails on the old code"
+  },
+  {
+   "id": "c-twin",
+   "title": "A C99 twin of the v2 engine",
+   "accept": "byte parity with the JavaScript engine on the oracle epochs"
+  },
+  {
+   "id": "bindings",
+   "title": "WASM, Kotlin, Swift and Dart bindings through the C twin",
+   "accept": "each binding reproduces the parity vectors"
+  },
+  {
+   "id": "native-widgets",
+   "title": "Android and iOS home-screen widgets",
+   "accept": "a widget shows any countdown card from config/widgets.json"
+  },
+  {
+   "id": "panini-f64",
+   "title": "f64 lowering in the PANINI WASM back end, then the engine in PANINI",
+   "accept": "emitted C and WASM pass the same parity vectors"
+  },
+  {
+   "id": "surya-siddhanta",
+   "title": "A Surya Siddhanta mode beside the drik one",
+   "accept": "mean and true places per the Burgess translation, selectable in config/schools.json"
+  },
+  {
+   "id": "regional-solar",
+   "title": "Bengali, Malayalam, Odia and Tamil solar months",
+   "accept": "each month-start rule retrieved and tested against a published year"
+  },
+  {
+   "id": "strength",
+   "title": "Ashtakavarga and Shadbala",
+   "accept": "tables retrieved from a named source; totals tested"
+  },
+  {
+   "id": "yoni-table",
+   "title": "The full graded yoni table",
+   "accept": "retrieved from a named source; replaces the partial rule"
+  },
+  {
+   "id": "varjyam",
+   "title": "Varjyam, Amrit Kalam and Dur Muhurta",
+   "accept": "rules retrieved; times tested against a published day"
+  },
+  {
+   "id": "96-lists",
+   "title": "Yugadi, Manvadi, Ashtaka, Anvashtaka and Purvedyuh dates",
+   "accept": "tithi lists retrieved from a named source"
+  },
+  {
+   "id": "festival-partials",
+   "title": "The Raksha Bandhan second-day rule and the Holika Dahan Bhadra-puccha allowance",
+   "accept": "rules retrieved; 2026 dates checked against a published list"
+  },
+  {
+   "id": "more-ayanamshas",
+   "title": "Further ayanamshas",
+   "accept": "each defined by epoch and value from a named source and measured against the oracle"
+  }
+ ]
+}

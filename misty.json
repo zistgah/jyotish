@@ -1,0 +1,49 @@
+{
+ "title": "Jyotish: a Sanatan panchang and jyotisha, computed and explained",
+ "description": "Jyotish is a Sanatan panchang and jyotisha that runs offline in the browser and as a JavaScript library. It is the Kaivalyik projection of CHAKRA (doi:10.5281/zenodo.21253628) on a second-generation engine: VSOP87D planets, the ELP-2000 Moon, IAU 1980 nutation and Espenak and Meeus Delta-T, measured against an independent ephemeris from 1900 to 2100 (Sun within 0.5 arcsecond, planets within 5, Moon within 8, sunrise within 5 seconds). It computes the five limbs with their end times, the windows of the day, 37 observances dated by vyapti rules, a Shraddh calculator with the Pitru Paksha special days, the kundali with divisional charts, Vimshottari to five levels and doshas with their cancellations, Ashtakoota matching with a Monte Carlo over birth-time uncertainty, a muhurta finder, countdowns with calendar export and a just-intonation music of the orbs. Every rule is configuration with its sources, and every result explains its own working. Dedicated to Shri Jyotish Chandra Chaudhuri.",
+ "license": "gpl-3.0",
+ "upload_type": "software",
+ "access_right": "open",
+ "version": "0.1.0",
+ "language": "eng",
+ "creators": [
+  {
+   "name": "Choudhary, Abhishek",
+   "affiliation": "AyeAI",
+   "orcid": "0009-0002-0684-8320"
+  }
+ ],
+ "keywords": [
+  "panchang",
+  "jyotisha",
+  "tithi",
+  "muhurta",
+  "shraddha",
+  "kundali",
+  "ashtakoota",
+  "Monte Carlo",
+  "VSOP87",
+  "ELP-2000",
+  "ephemeris",
+  "offline-first"
+ ],
+ "programming_language": "JavaScript",
+ "repository": "https://github.com/zistgah/jyotish",
+ "related_identifiers": [
+  {
+   "identifier": "10.5281/zenodo.21253628",
+   "relation": "isDerivedFrom",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "https://github.com/zistgah/jyotish",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://zistgah.github.io/jyotish/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  }
+ ]
+}

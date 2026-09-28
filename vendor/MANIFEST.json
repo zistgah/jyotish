@@ -1,0 +1,15 @@
+{
+ "_about": "Files copied unchanged from Chakra v1. The test suite refuses the build if a hash drifts.",
+ "source": "https://github.com/project-ilm/chakra",
+ "commit": "13fa67d884b809a74850d25928ecdf44a0145ab7",
+ "files": {
+  "chakra-core.js": {
+   "from": "src/chakra-core.js",
+   "sha256": "b5a87b362ce0fae892683ff009cb3fb9767d4586ab0f635149bef32cbd0847d1"
+  },
+  "chakra-plus.js": {
+   "from": "js/chakra-plus.js",
+   "sha256": "d0e7ebb2f46dc5caf0254291c85aa01c3800dfb6d499fc18467129899e1c8efb"
+  }
+ }
+}

@@ -1,0 +1,315 @@
+{
+ "_about": "Aṣṭakūṭa. The Moon's sign and nakṣatra come from the Moon's actual longitude, never from the nakṣatra alone; Graha Maitrī uses the lords of the two Moon signs. Where sources disagree the table is marked, and the table in force is shown beside every score.",
+ "kootas": [
+  "varna",
+  "vashya",
+  "tara",
+  "yoni",
+  "maitri",
+  "gana",
+  "bhakoot",
+  "nadi"
+ ],
+ "max": {
+  "varna": 1,
+  "vashya": 2,
+  "tara": 3,
+  "yoni": 4,
+  "maitri": 5,
+  "gana": 6,
+  "bhakoot": 7,
+  "nadi": 8
+ },
+ "varna": {
+  "by_sign": [
+   2,
+   1,
+   0,
+   3,
+   2,
+   1,
+   0,
+   3,
+   2,
+   1,
+   0,
+   3
+  ],
+  "names": [
+   "Śūdra",
+   "Vaiśya",
+   "Kṣatriya",
+   "Brāhmaṇa"
+  ],
+  "rule": "1 when the groom's varṇa is at or above the bride's",
+  "basis": {
+   "refs": [
+    "astrolozyy-2025"
+   ],
+   "status": "retrieved"
+  }
+ },
+ "vashya": {
+  "names": [
+   "Catuṣpada",
+   "Mānava",
+   "Jalacara",
+   "Vanacara",
+   "Kīṭa"
+  ],
+  "by_sign": [
+   0,
+   0,
+   1,
+   2,
+   3,
+   1,
+   1,
+   4,
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    2
+   ],
+   1,
+   2
+  ],
+  "split_note": "Dhanu: first half Mānava, second half Catuṣpada. Makara: first half Catuṣpada, second half Jalacara.",
+  "matrix_groom_rows": [
+   [
+    2,
+    1,
+    1,
+    0.5,
+    1
+   ],
+   [
+    1,
+    2,
+    0.5,
+    0,
+    1
+   ],
+   [
+    1,
+    0.5,
+    2,
+    1,
+    1
+   ],
+   [
+    0.5,
+    0,
+    1,
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    0,
+    2
+   ]
+  ],
+  "basis": {
+   "refs": [
+    "sahita-2026"
+   ],
+   "status": "sources-differ",
+   "note": "Same group scores 2, one-sided influence 1, none 0; the half points follow the common North Indian table."
+  }
+ },
+ "tara": {
+  "bad": [
+   3,
+   5,
+   7
+  ],
+  "each_direction": 1.5,
+  "basis": {
+   "refs": [
+    "astrolozyy-2025",
+    "sahita-2026"
+   ],
+   "status": "retrieved",
+   "note": "Counted both ways; a count whose remainder after nines is 3, 5 or 7 scores 0 for that direction."
+  }
+ },
+ "yoni": {
+  "same": 4,
+  "enemy": 0,
+  "other": 2,
+  "enemy_pairs": [
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    13
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    3,
+    12
+   ],
+   [
+    4,
+    10
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    9
+   ]
+  ],
+  "basis": {
+   "refs": [
+    "muhurta-chintamani"
+   ],
+   "status": "partial",
+   "note": "Same yoni 4 and the seven enemy pairs 0 are classical; the intermediate grades 3, 2 and 1 need the full table from a retrieved source, so every other pair scores 2."
+  }
+ },
+ "maitri": {
+  "points": {
+   "friend-friend": 5,
+   "friend-neutral": 4,
+   "neutral-neutral": 3,
+   "friend-enemy": 1,
+   "neutral-enemy": 0.5,
+   "enemy-enemy": 0
+  },
+  "basis": {
+   "refs": [
+    "bphs"
+   ],
+   "status": "convention",
+   "note": "Natural friendship of the two Moon-sign lords, from config/kundali.json."
+  }
+ },
+ "gana": {
+  "table": [
+   [
+    6,
+    5,
+    0
+   ],
+   [
+    5,
+    6,
+    1
+   ],
+   [
+    0,
+    1,
+    6
+   ]
+  ],
+  "order": [
+   "Deva",
+   "Manuṣya",
+   "Rākṣasa"
+  ],
+  "basis": {
+   "refs": [
+    "astronidan-2026",
+    "astroyogi-gana-2026"
+   ],
+   "status": "sources-differ",
+   "note": "Same gaṇa 6, Deva with Manuṣya 5, Manuṣya with Rākṣasa 1, Deva with Rākṣasa 0. Some schools score by who is the groom; that directional table is not established here."
+  }
+ },
+ "bhakoot": {
+  "dosha_counts": [
+   2,
+   12,
+   5,
+   9,
+   6,
+   8
+  ],
+  "points": 7,
+  "basis": {
+   "refs": [
+    "sahita-2026"
+   ],
+   "status": "convention",
+   "note": "Counted inclusively from one Moon sign to the other; 2/12, 5/9 and 6/8 score 0."
+  }
+ },
+ "nadi": {
+  "points": 8,
+  "basis": {
+   "refs": [
+    "astrolozyy-2025"
+   ],
+   "status": "convention"
+  }
+ },
+ "cancellations": {
+  "apply": false,
+  "nadi": [
+   {
+    "id": "same-rashi-diff-nak",
+    "text": "Same Moon sign, different nakṣatra"
+   },
+   {
+    "id": "same-nak-diff-rashi",
+    "text": "Same nakṣatra, different Moon sign"
+   },
+   {
+    "id": "same-nak-diff-pada",
+    "text": "Same nakṣatra, different pada"
+   }
+  ],
+  "bhakoot": [
+   {
+    "id": "same-lord",
+    "text": "The two Moon signs share a lord"
+   },
+   {
+    "id": "friendly-lords",
+    "text": "The two Moon-sign lords are mutual friends"
+   }
+  ],
+  "gana": [
+   {
+    "id": "friendly-lords",
+    "text": "The two Moon-sign lords are mutual friends"
+   }
+  ],
+  "basis": {
+   "refs": [
+    "muhurta-chintamani"
+   ],
+   "status": "convention",
+   "note": "Shown when their conditions hold; the score is not changed unless apply is true."
+  }
+ },
+ "verdict": [
+  {
+   "min": 26,
+   "text": "high by convention"
+  },
+  {
+   "min": 18,
+   "text": "acceptable by convention"
+  },
+  {
+   "min": 0,
+   "text": "low by convention"
+  }
+ ],
+ "disclaimer": "Aṣṭakūṭa is a cultural convention. It does not measure a real relationship and no decision should rest on it."
+}

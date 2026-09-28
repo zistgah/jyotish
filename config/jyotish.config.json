@@ -1,0 +1,118 @@
+{
+ "_about": "Jyotish, the Kaivalyik projection of Chakra. Everything the page shows is decided here and in the other files of this folder; no rule lives in code.",
+ "name": "Jyotish",
+ "tagline": "A Sanatan panchang and jyotisha, computed and explained",
+ "projection": "kaivalyik",
+ "projection_note": "Hindu reckonings only. The engine keeps every tradition Chakra computes; this projection shows the Sanatan ones.",
+ "place": {
+  "name": "Ujjain",
+  "lat": 23.1765,
+  "lon": 75.7885,
+  "tz": 5.5
+ },
+ "places": [
+  {
+   "name": "Ujjain",
+   "lat": 23.1765,
+   "lon": 75.7885,
+   "tz": 5.5
+  },
+  {
+   "name": "Hyderabad",
+   "lat": 17.385,
+   "lon": 78.4867,
+   "tz": 5.5
+  },
+  {
+   "name": "Kolkata",
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "tz": 5.5
+  },
+  {
+   "name": "New Delhi",
+   "lat": 28.6139,
+   "lon": 77.209,
+   "tz": 5.5
+  },
+  {
+   "name": "Mumbai",
+   "lat": 19.076,
+   "lon": 72.8777,
+   "tz": 5.5
+  },
+  {
+   "name": "Chennai",
+   "lat": 13.0827,
+   "lon": 80.2707,
+   "tz": 5.5
+  },
+  {
+   "name": "Bengaluru",
+   "lat": 12.9716,
+   "lon": 77.5946,
+   "tz": 5.5
+  },
+  {
+   "name": "Varanasi",
+   "lat": 25.3176,
+   "lon": 82.9739,
+   "tz": 5.5
+  },
+  {
+   "name": "Patna",
+   "lat": 25.5941,
+   "lon": 85.1376,
+   "tz": 5.5
+  },
+  {
+   "name": "Guwahati",
+   "lat": 26.1445,
+   "lon": 91.7362,
+   "tz": 5.5
+  },
+  {
+   "name": "Kathmandu",
+   "lat": 27.7172,
+   "lon": 85.324,
+   "tz": 5.75
+  }
+ ],
+ "tz_note": "Offsets are fixed; daylight saving is not modelled.",
+ "views": {
+  "default": "easy",
+  "options": {
+   "easy": "The day at a glance",
+   "full": "Every limb, window and table"
+  }
+ },
+ "features": {
+  "today": true,
+  "calendar": true,
+  "festivals": true,
+  "shraddha": true,
+  "kundali": true,
+  "match": true,
+  "muhurta": true,
+  "music": true,
+  "sources": true
+ },
+ "monte_carlo": {
+  "samples": 1500,
+  "seed": 108
+ },
+ "repository": "https://github.com/zistgah/jyotish",
+ "upstream": {
+  "library": "project-ilm/chakra",
+  "v1_commit": "13fa67d884b809a74850d25928ecdf44a0145ab7"
+ },
+ "accuracy": {
+  "sun_arcsec": 1,
+  "planets_arcsec": 5,
+  "moon_arcsec": 10,
+  "sidereal_arcsec": 5,
+  "rise_set_s": 5,
+  "moonrise_s": 3,
+  "measured_against": "pyswisseph Moshier mode, 201 yearly epochs 1900-2100; tests/run.js re-measures and fails if a published bound is exceeded"
+ }
+}

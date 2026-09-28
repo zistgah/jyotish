@@ -1,0 +1,64 @@
+{
+ "_about": "Explain with an AI. Providers are listed alphabetically; none is preferred. The offline derivation is always shown first, and a local model keeps everything on the machine. Vendor names live only in this file.",
+ "prompt_intro": "Explain this jyotiṣa result step by step. Say which parts are astronomy, which are traditional rule, and where schools differ. Result and derivation follow.",
+ "max_url_chars": 6000,
+ "providers": [
+  {
+   "id": "chatgpt",
+   "label": "ChatGPT",
+   "mode": "url",
+   "url": "https://chatgpt.com/?q="
+  },
+  {
+   "id": "claude",
+   "label": "Claude",
+   "mode": "url",
+   "url": "https://claude.ai/new?q="
+  },
+  {
+   "id": "copilot",
+   "label": "Copilot",
+   "mode": "url",
+   "url": "https://copilot.microsoft.com/?q="
+  },
+  {
+   "id": "gemini",
+   "label": "Gemini",
+   "mode": "copy",
+   "url": "https://gemini.google.com/app"
+  },
+  {
+   "id": "grok",
+   "label": "Grok",
+   "mode": "url",
+   "url": "https://grok.com/?q="
+  },
+  {
+   "id": "lechat",
+   "label": "Le Chat",
+   "mode": "url",
+   "url": "https://chat.mistral.ai/chat?q="
+  },
+  {
+   "id": "local",
+   "label": "Local model (Ollama)",
+   "mode": "local",
+   "endpoint": "http://127.0.0.1:11434/api/generate",
+   "model": "llama3.1"
+  },
+  {
+   "id": "perplexity",
+   "label": "Perplexity",
+   "mode": "url",
+   "url": "https://www.perplexity.ai/search?q="
+  }
+ ],
+ "copy_note": "This provider does not accept a question in its address, so the question is copied for pasting.",
+ "basis": {
+  "refs": [
+   "chakra-v1"
+  ],
+  "status": "partial",
+  "note": "Chakra already opened claude.ai, chatgpt.com and perplexity.ai with the question in the address; the other address forms are not verified here and fall back to copying if they do not prefill."
+ }
+}

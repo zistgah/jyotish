@@ -1,0 +1,962 @@
+{
+ "_about": "Observance rules. A rule names a lunar month in amanta reckoning, a pakṣa, a tithi, the part of the day in which the tithi must hold (vyāpti), and how to choose between two days. Dates are computed, never stored; anchors are published dates the test suite checks against.",
+ "vyapti_windows": {
+  "udaya": "the instant of sunrise",
+  "purvahna": "sunrise to midday",
+  "madhyahna": "third fifth of daylight",
+  "aparahna": "fourth fifth of daylight",
+  "pradosha": "first fifth of the night",
+  "nishitha": "eighth muhurta of the night",
+  "moonrise": "the instant of moonrise",
+  "sunset": "the instant of sunset",
+  "first-third-of-day": "sunrise to a third of daylight"
+ },
+ "prefer_rules": {
+  "udaya": "the day whose sunrise falls inside the tithi; a kṣaya tithi falls back to the day holding most of it",
+  "max-overlap": "the day whose window holds the tithi longest; a tie goes to the first day"
+ },
+ "rules": [
+  {
+   "id": "makara-sankranti",
+   "name": "Makara Saṅkrānti",
+   "en": "Makar Sankranti",
+   "type": "sankranti",
+   "sign": 9,
+   "rule": "before-sunset-same-day",
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "drik-app"
+    ],
+    "status": "convention",
+    "note": "The day of the Sun's sidereal entry into Makara when it enters before sunset, otherwise the next day."
+   },
+   "anchors": [
+    {
+     "date_range": [
+      "2026-01-13",
+      "2026-01-16"
+     ],
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "mesha-sankranti",
+   "name": "Meṣa Saṅkrānti",
+   "en": "Solar new year",
+   "type": "sankranti",
+   "sign": 0,
+   "rule": "before-sunset-same-day",
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "vasanta-panchami",
+   "name": "Vasanta Pañcamī",
+   "en": "Saraswati Puja",
+   "type": "tithi",
+   "masa": "Māgha",
+   "paksha": "shukla",
+   "tithi": 5,
+   "vyapti": "purvahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian; Bengal",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-01-23",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "maha-shivaratri",
+   "name": "Mahā Śivarātri",
+   "en": "Maha Shivaratri",
+   "type": "tithi",
+   "masa": "Māgha",
+   "paksha": "krishna",
+   "tithi": 14,
+   "vyapti": "nishitha",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "śaiva",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention",
+    "note": "Phālguna Kṛṣṇa Caturdaśī in pūrṇimānta reckoning; the tithi must hold at niśītha."
+   },
+   "anchors": [
+    {
+     "date": "2026-02-15",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "holika-dahan",
+   "name": "Holikā Dahana",
+   "en": "Holika Dahan",
+   "type": "tithi",
+   "masa": "Phālguna",
+   "paksha": "shukla",
+   "tithi": 15,
+   "vyapti": "pradosha",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti",
+    "avoid": [
+     "bhadra"
+    ]
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "partial",
+    "note": "Pradoṣa with Pūrṇimā, outside Bhadrā; when Bhadrā covers pradoṣa the window moves to after Bhadrā ends. The Bhadrā-puccha allowance is not yet applied."
+   }
+  },
+  {
+   "id": "dola-purnima",
+   "name": "Dola Pūrṇimā",
+   "en": "Dol Jatra",
+   "type": "tithi",
+   "masa": "Phālguna",
+   "paksha": "shukla",
+   "tithi": 15,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "Bengal/East",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-03-03",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "chaitra-navaratri",
+   "name": "Vasanta Navarātri begins",
+   "en": "Chaitra Navratri, Ugadi, Gudi Padwa",
+   "type": "tithi",
+   "masa": "Caitra",
+   "paksha": "shukla",
+   "tithi": 1,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "first-third-of-day"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "rama-navami",
+   "name": "Rāma Navamī",
+   "en": "Ram Navami",
+   "type": "tithi",
+   "masa": "Caitra",
+   "paksha": "shukla",
+   "tithi": 9,
+   "vyapti": "madhyahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "vaiṣṇava",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-03-26",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "akshaya-tritiya",
+   "name": "Akṣaya Tṛtīyā",
+   "en": "Akshaya Tritiya",
+   "type": "tithi",
+   "masa": "Vaiśākha",
+   "paksha": "shukla",
+   "tithi": 3,
+   "vyapti": "purvahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-04-20",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "buddha-purnima",
+   "name": "Vaiśākha Pūrṇimā",
+   "en": "Buddha Purnima",
+   "type": "tithi",
+   "masa": "Vaiśākha",
+   "paksha": "shukla",
+   "tithi": 15,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-05-01",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "ganga-dussehra",
+   "name": "Gaṅgā Daśaharā",
+   "en": "Ganga Dussehra",
+   "type": "tithi",
+   "masa": "Jyeṣṭha",
+   "paksha": "shukla",
+   "tithi": 10,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "guru-purnima",
+   "name": "Guru Pūrṇimā",
+   "en": "Guru Purnima",
+   "type": "tithi",
+   "masa": "Āṣāḍha",
+   "paksha": "shukla",
+   "tithi": 15,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "raksha-bandhan",
+   "name": "Rakṣā Bandhana",
+   "en": "Raksha Bandhan",
+   "type": "tithi",
+   "masa": "Śrāvaṇa",
+   "paksha": "shukla",
+   "tithi": 15,
+   "vyapti": "aparahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti",
+    "avoid": [
+     "bhadra"
+    ]
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "partial",
+    "note": "Aparāhṇa preferred, else pradoṣa; never inside Bhadrā. The Nirṇaya Sindhu rule preferring the second day when Pūrṇimā holds three muhūrtas after its sunrise is not yet applied."
+   },
+   "anchors": [
+    {
+     "date_range": [
+      "2026-08-26",
+      "2026-08-30"
+     ],
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "janmashtami",
+   "name": "Kṛṣṇa Janmāṣṭamī",
+   "en": "Janmashtami (Smarta)",
+   "type": "tithi",
+   "masa": "Śrāvaṇa",
+   "paksha": "krishna",
+   "tithi": 8,
+   "vyapti": "nishitha",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "vaiṣṇava",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention",
+    "note": "Bhādrapada Kṛṣṇa Aṣṭamī in pūrṇimānta reckoning. Rohiṇī preference and the Vaiṣṇava rule are not applied here."
+   },
+   "anchors": [
+    {
+     "date": "2026-09-04",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "ganesha-chaturthi",
+   "name": "Gaṇeśa Caturthī",
+   "en": "Ganesh Chaturthi",
+   "type": "tithi",
+   "masa": "Bhādrapada",
+   "paksha": "shukla",
+   "tithi": 4,
+   "vyapti": "madhyahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-09-14",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "anant-chaturdashi",
+   "name": "Ananta Caturdaśī",
+   "en": "Anant Chaturdashi, Ganesh Visarjan",
+   "type": "tithi",
+   "masa": "Bhādrapada",
+   "paksha": "shukla",
+   "tithi": 14,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "tithi-in-daylight"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention",
+    "note": "The day Caturdaśī holds at sunrise; the pūjā runs from sunrise while the tithi lasts."
+   }
+  },
+  {
+   "id": "pitru-paksha-begins",
+   "name": "Pitṛ Pakṣa begins",
+   "en": "Pitru Paksha begins",
+   "type": "tithi",
+   "masa": "Bhādrapada",
+   "paksha": "shukla",
+   "tithi": 15,
+   "vyapti": "aparahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention",
+    "note": "Pūrṇimā Śrāddha; the fortnight's own dates come from the Śrāddha calculator."
+   },
+   "anchors": [
+    {
+     "date": "2026-09-26",
+     "place": "New Delhi",
+     "source": "harishyam-2026"
+    }
+   ]
+  },
+  {
+   "id": "mahalaya-amavasya",
+   "name": "Sarvapitṛ Amāvāsyā",
+   "en": "Mahalaya Amavasya",
+   "type": "tithi",
+   "masa": "Bhādrapada",
+   "paksha": "krishna",
+   "tithi": 15,
+   "vyapti": "aparahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-10-10",
+     "place": "New Delhi",
+     "source": "harishyam-2026"
+    }
+   ]
+  },
+  {
+   "id": "sharadiya-navaratri",
+   "name": "Śāradīya Navarātri begins",
+   "en": "Navratri, Ghatasthapana",
+   "type": "tithi",
+   "masa": "Āśvina",
+   "paksha": "shukla",
+   "tithi": 1,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "first-third-of-day"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-10-11",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "durga-ashtami",
+   "name": "Durgā Aṣṭamī",
+   "en": "Durga Ashtami",
+   "type": "tithi",
+   "masa": "Āśvina",
+   "paksha": "shukla",
+   "tithi": 8,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "śākta; Bengal/East",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-10-19",
+     "place": "New Delhi",
+     "source": "divinehindu-2026"
+    }
+   ]
+  },
+  {
+   "id": "vijaya-dashami",
+   "name": "Vijayā Daśamī",
+   "en": "Dussehra",
+   "type": "tithi",
+   "masa": "Āśvina",
+   "paksha": "shukla",
+   "tithi": 10,
+   "vyapti": "aparahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-10-20",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "kojagari",
+   "name": "Kojāgarī Lakṣmī Pūjā",
+   "en": "Sharad Purnima",
+   "type": "tithi",
+   "masa": "Āśvina",
+   "paksha": "shukla",
+   "tithi": 15,
+   "vyapti": "nishitha",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "Bengal/East",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "karwa-chauth",
+   "name": "Karavā Cautha",
+   "en": "Karwa Chauth",
+   "type": "tithi",
+   "masa": "Āśvina",
+   "paksha": "krishna",
+   "tithi": 4,
+   "vyapti": "moonrise",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "moonrise"
+   },
+   "tradition": "North India",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention",
+    "note": "Kārtika Kṛṣṇa Caturthī in pūrṇimānta reckoning; the tithi must hold at moonrise."
+   }
+  },
+  {
+   "id": "dhanteras",
+   "name": "Dhanatrayodaśī",
+   "en": "Dhanteras",
+   "type": "tithi",
+   "masa": "Āśvina",
+   "paksha": "krishna",
+   "tithi": 13,
+   "vyapti": "pradosha",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "diwali-lakshmi-puja",
+   "name": "Dīpāvalī, Lakṣmī Pūjā",
+   "en": "Diwali",
+   "type": "tithi",
+   "masa": "Āśvina",
+   "paksha": "krishna",
+   "tithi": 15,
+   "vyapti": "pradosha",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention",
+    "note": "Pradoṣa-vyāpinī Amāvāsyā; Chakra's test pins 8 Nov 2026 at Ujjain."
+   },
+   "anchors": [
+    {
+     "date": "2026-11-08",
+     "place": "Ujjain",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "kali-puja",
+   "name": "Kālī Pūjā",
+   "en": "Kali Puja",
+   "type": "tithi",
+   "masa": "Āśvina",
+   "paksha": "krishna",
+   "tithi": 15,
+   "vyapti": "nishitha",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "Bengal/East",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   },
+   "anchors": [
+    {
+     "date": "2026-11-08",
+     "place": "New Delhi",
+     "source": "chakra-2026-anchors"
+    }
+   ]
+  },
+  {
+   "id": "govardhan-puja",
+   "name": "Govardhana Pūjā",
+   "en": "Govardhan Puja",
+   "type": "tithi",
+   "masa": "Kārtika",
+   "paksha": "shukla",
+   "tithi": 1,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "bhai-dooj",
+   "name": "Bhrātṛ Dvitīyā",
+   "en": "Bhai Dooj",
+   "type": "tithi",
+   "masa": "Kārtika",
+   "paksha": "shukla",
+   "tithi": 2,
+   "vyapti": "aparahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "chhath",
+   "name": "Chhaṭh, Sandhyā Arghya",
+   "en": "Chhath",
+   "type": "tithi",
+   "masa": "Kārtika",
+   "paksha": "shukla",
+   "tithi": 6,
+   "vyapti": "sunset",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "sunset"
+   },
+   "tradition": "Bihar/Purvanchal",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "kartika-purnima",
+   "name": "Kārtika Pūrṇimā",
+   "en": "Kartik Purnima",
+   "type": "tithi",
+   "masa": "Kārtika",
+   "paksha": "shukla",
+   "tithi": 15,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "ekadashi-shukla",
+   "name": "Ekādaśī (Śukla)",
+   "en": "Ekadashi",
+   "type": "tithi",
+   "masa": "*",
+   "paksha": "shukla",
+   "tithi": 11,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "smārta",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "partial",
+    "note": "Sunrise rule only. The Vaiṣṇava rule on Daśamī at aruṇodaya is not established here."
+   }
+  },
+  {
+   "id": "ekadashi-krishna",
+   "name": "Ekādaśī (Kṛṣṇa)",
+   "en": "Ekadashi",
+   "type": "tithi",
+   "masa": "*",
+   "paksha": "krishna",
+   "tithi": 11,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "smārta",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "partial",
+    "note": "Sunrise rule only. The Vaiṣṇava rule on Daśamī at aruṇodaya is not established here."
+   }
+  },
+  {
+   "id": "sankashti",
+   "name": "Saṅkaṣṭī Caturthī",
+   "en": "Sankashti Chaturthi",
+   "type": "tithi",
+   "masa": "*",
+   "paksha": "krishna",
+   "tithi": 4,
+   "vyapti": "moonrise",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "moonrise"
+   },
+   "tradition": "gāṇapatya",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "pradosh",
+   "name": "Pradoṣa Vrata",
+   "en": "Pradosh",
+   "type": "tithi",
+   "masa": "*",
+   "paksha": "both",
+   "tithi": 13,
+   "vyapti": "pradosha",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "śaiva",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "masik-shivaratri",
+   "name": "Māsika Śivarātri",
+   "en": "Masik Shivaratri",
+   "type": "tithi",
+   "masa": "*",
+   "paksha": "krishna",
+   "tithi": 14,
+   "vyapti": "nishitha",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "śaiva",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "purnima",
+   "name": "Pūrṇimā",
+   "en": "Full moon",
+   "type": "tithi",
+   "masa": "*",
+   "paksha": "shukla",
+   "tithi": 15,
+   "vyapti": "udaya",
+   "prefer": "udaya",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "amavasya",
+   "name": "Amāvāsyā",
+   "en": "New moon",
+   "type": "tithi",
+   "masa": "*",
+   "paksha": "krishna",
+   "tithi": 15,
+   "vyapti": "aparahna",
+   "prefer": "max-overlap",
+   "puja": {
+    "window": "vyapti"
+   },
+   "tradition": "pan-Indian",
+   "basis": {
+    "refs": [
+     "nirnaya-sindhu",
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  }
+ ]
+}

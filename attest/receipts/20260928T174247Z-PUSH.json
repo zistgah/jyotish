@@ -1,0 +1,13 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicateType": "https://project-ilm.org/attestations/candor/v1",
+  "subject": [{"name": "zistgah/jyotish", "digest": {}}],
+  "predicate": {
+    "action": "PUSH",
+    "reason": "seed",
+    "note": "no commit existed when this intent was sealed; the countersign names it",
+    "utc": "20260928T174247Z",
+    "host": "ilm01-lin",
+    "tool": "zestate 1.0.0"
+  }
+}

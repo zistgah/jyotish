@@ -1,0 +1,28 @@
+{
+ "_about": "Which reckoning the engine uses. Every choice here changes what is computed, so every choice is shown on screen next to the result it governs.",
+ "ayanamsha": {
+  "default": "lahiri",
+  "options": {
+   "lahiri": {"label": "Lahiri (Chitrāpakṣa)", "t0": 2435553.5, "value": 23.250182778, "lessNutationAtT0": true,
+              "basis": {"refs": ["icrc-1955", "pyswisseph-oracle"], "status": "retrieved",
+                        "note": "23° 15′ 00.658″ at 1956-03-21 0h is a true value; the mean ayanāṁśa is that less the nutation in longitude on that date. Measured against the independent oracle: within 0.25″ from 1900 to 2100."}}
+  }
+ },
+ "horizon": {
+  "default": "upper-limb-refracted",
+  "options": {
+   "upper-limb-refracted": {"label": "Upper limb, with refraction", "altitude_deg": -0.8333},
+   "centre-refracted": {"label": "Centre of the disc, with refraction", "altitude_deg": -0.5667},
+   "centre-geometric": {"label": "Centre of the disc, no refraction", "altitude_deg": 0}
+  },
+  "basis": {"refs": ["meeus-1998"], "status": "convention"}
+ },
+ "month_system": {"default": "amanta", "options": ["amanta", "purnimanta"],
+  "basis": {"refs": ["icrc-1955"], "status": "convention", "note": "Amānta months end at new moon; pūrṇimānta months end at full moon, so the dark fortnight carries the next month's name."}},
+ "node": {"default": "true", "options": ["true", "mean"],
+  "basis": {"refs": ["meeus-1998"], "status": "convention", "note": "True is the osculating node from the lunar series; within about 1′ of the oracle."}},
+ "ritu": {"default": "drik", "options": ["drik", "vedic"]},
+ "ayana": {"default": "drik", "options": ["drik", "vedic"]},
+ "dasha_year_days": {"default": 365.2425, "basis": {"refs": ["bphs"], "status": "convention", "note": "Schools differ between 360, 365.25 and 365.2425 days; the choice moves daśā dates by days per decade."}},
+ "house_system": {"default": "whole-sign", "options": ["whole-sign", "sripati"]}
+}

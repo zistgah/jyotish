@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use Jyotish, please cite it as below."
+title: "Jyotish: a Sanatan panchang and jyotisha, computed and explained"
+version: "0.1.0"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/zistgah/jyotish"
+url: "https://zistgah.github.io/jyotish/"
+authors:
+  - family-names: Choudhary
+    given-names: Abhishek
+    affiliation: AyeAI
+    orcid: "https://orcid.org/0009-0002-0684-8320"
+keywords: [panchang, jyotisha, tithi, muhurta, shraddha, kundali, ephemeris, VSOP87, offline-first]
+references:
+  - type: software
+    title: "CHAKRA, Temporal Cycle Observatory"
+    authors:
+      - family-names: Choudhary
+        given-names: Abhishek
+    doi: "10.5281/zenodo.21253628"

@@ -1,0 +1,295 @@
+{
+ "_about": "Chart construction: styles, houses, dignities, combustion and the daśā system. Tables are data; the engine reads them.",
+ "grahas": [
+  "Sun",
+  "Moon",
+  "Mars",
+  "Mercury",
+  "Jupiter",
+  "Venus",
+  "Saturn",
+  "Rahu",
+  "Ketu"
+ ],
+ "abbrev": {
+  "Sun": "Su",
+  "Moon": "Mo",
+  "Mars": "Ma",
+  "Mercury": "Me",
+  "Jupiter": "Ju",
+  "Venus": "Ve",
+  "Saturn": "Sa",
+  "Rahu": "Ra",
+  "Ketu": "Ke",
+  "Asc": "La"
+ },
+ "chart_styles": {
+  "default": "north",
+  "options": {
+   "north": "North Indian diamond, houses fixed",
+   "south": "South Indian square, signs fixed",
+   "east": "East Indian square, signs fixed"
+  }
+ },
+ "dignity": {
+  "exaltation": {
+   "Sun": [
+    0,
+    10
+   ],
+   "Moon": [
+    1,
+    3
+   ],
+   "Mars": [
+    9,
+    28
+   ],
+   "Mercury": [
+    5,
+    15
+   ],
+   "Jupiter": [
+    3,
+    5
+   ],
+   "Venus": [
+    11,
+    27
+   ],
+   "Saturn": [
+    6,
+    20
+   ]
+  },
+  "moolatrikona": {
+   "Sun": [
+    4,
+    0,
+    20
+   ],
+   "Moon": [
+    1,
+    3,
+    30
+   ],
+   "Mars": [
+    0,
+    0,
+    12
+   ],
+   "Mercury": [
+    5,
+    15,
+    20
+   ],
+   "Jupiter": [
+    8,
+    0,
+    10
+   ],
+   "Venus": [
+    6,
+    0,
+    15
+   ],
+   "Saturn": [
+    10,
+    0,
+    20
+   ]
+  },
+  "basis": {
+   "refs": [
+    "bphs"
+   ],
+   "status": "convention",
+   "note": "Exaltation as [sign, degree]; debilitation is the opposite sign. Mūlatrikoṇa as [sign, from, to] degrees."
+  }
+ },
+ "natural_friendship": {
+  "Sun": {
+   "friends": [
+    "Moon",
+    "Mars",
+    "Jupiter"
+   ],
+   "neutral": [
+    "Mercury"
+   ],
+   "enemies": [
+    "Venus",
+    "Saturn"
+   ]
+  },
+  "Moon": {
+   "friends": [
+    "Sun",
+    "Mercury"
+   ],
+   "neutral": [
+    "Mars",
+    "Jupiter",
+    "Venus",
+    "Saturn"
+   ],
+   "enemies": []
+  },
+  "Mars": {
+   "friends": [
+    "Sun",
+    "Moon",
+    "Jupiter"
+   ],
+   "neutral": [
+    "Venus",
+    "Saturn"
+   ],
+   "enemies": [
+    "Mercury"
+   ]
+  },
+  "Mercury": {
+   "friends": [
+    "Sun",
+    "Venus"
+   ],
+   "neutral": [
+    "Mars",
+    "Jupiter",
+    "Saturn"
+   ],
+   "enemies": [
+    "Moon"
+   ]
+  },
+  "Jupiter": {
+   "friends": [
+    "Sun",
+    "Moon",
+    "Mars"
+   ],
+   "neutral": [
+    "Saturn"
+   ],
+   "enemies": [
+    "Mercury",
+    "Venus"
+   ]
+  },
+  "Venus": {
+   "friends": [
+    "Mercury",
+    "Saturn"
+   ],
+   "neutral": [
+    "Mars",
+    "Jupiter"
+   ],
+   "enemies": [
+    "Sun",
+    "Moon"
+   ]
+  },
+  "Saturn": {
+   "friends": [
+    "Mercury",
+    "Venus"
+   ],
+   "neutral": [
+    "Jupiter"
+   ],
+   "enemies": [
+    "Sun",
+    "Moon",
+    "Mars"
+   ]
+  },
+  "basis": {
+   "refs": [
+    "bphs"
+   ],
+   "status": "convention"
+  }
+ },
+ "combustion_orb_deg": {
+  "Moon": 12,
+  "Mars": 17,
+  "Mercury": 14,
+  "Mercury_retro": 12,
+  "Jupiter": 11,
+  "Venus": 10,
+  "Venus_retro": 8,
+  "Saturn": 15,
+  "basis": {
+   "refs": [
+    "surya-siddhanta-burgess"
+   ],
+   "status": "convention"
+  }
+ },
+ "vimshottari": {
+  "lords": [
+   "Ketu",
+   "Venus",
+   "Sun",
+   "Moon",
+   "Mars",
+   "Rahu",
+   "Jupiter",
+   "Saturn",
+   "Mercury"
+  ],
+  "years": {
+   "Ketu": 7,
+   "Venus": 20,
+   "Sun": 6,
+   "Moon": 10,
+   "Mars": 7,
+   "Rahu": 18,
+   "Jupiter": 16,
+   "Saturn": 19,
+   "Mercury": 17
+  },
+  "levels": [
+   "Mahādaśā",
+   "Antardaśā",
+   "Pratyantardaśā",
+   "Sūkṣmadaśā",
+   "Prāṇadaśā"
+  ],
+  "basis": {
+   "refs": [
+    "bphs"
+   ],
+   "status": "convention",
+   "note": "Each sub-period is the parent's length times the sub-lord's years over 120, starting from the parent's lord."
+  }
+ },
+ "vargas": [
+  1,
+  2,
+  3,
+  4,
+  7,
+  9,
+  10,
+  12,
+  16,
+  20,
+  24,
+  27,
+  30,
+  40,
+  45,
+  60
+ ],
+ "vargas_basis": {
+  "refs": [
+   "bphs",
+   "chakra-v1"
+  ],
+  "status": "reused",
+  "note": "Divisional signs come from Chakra's own chakra-plus.js, vendored unchanged."
+ }
+}

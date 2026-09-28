@@ -1,0 +1,48 @@
+{
+ "_about": "Countdown cards. Each card is a kind the events module answers; the dashboard, the installed app and home-screen widgets read the same list.",
+ "kinds": {
+  "sunrise": "Sunrise",
+  "sunset": "Sunset",
+  "moonrise": "Moonrise",
+  "moonset": "Moonset",
+  "tithi-end": "End of the tithi",
+  "nakshatra-end": "End of the nakṣatra",
+  "yoga-end": "End of the yoga",
+  "karana-end": "End of the karaṇa",
+  "purnima": "Next full moon",
+  "amavasya": "Next new moon",
+  "ekadashi": "Next Ekādaśī",
+  "sankranti": "Next saṅkrānti",
+  "rahu-kaal": "Next Rāhu Kāla",
+  "abhijit": "Next Abhijit",
+  "brahma": "Next Brahma muhūrta",
+  "festival": "A festival",
+  "custom": "A date and time of your own"
+ },
+ "default_dashboard": [
+  {
+   "kind": "tithi-end"
+  },
+  {
+   "kind": "nakshatra-end"
+  },
+  {
+   "kind": "sunset"
+  },
+  {
+   "kind": "rahu-kaal"
+  },
+  {
+   "kind": "purnima"
+  },
+  {
+   "kind": "festival",
+   "arg": "diwali-lakshmi-puja"
+  }
+ ],
+ "refresh_seconds": 1,
+ "native_widgets": {
+  "status": "owed",
+  "note": "Android and iOS home-screen widgets need native shells; the installed web app shows the same cards."
+ }
+}

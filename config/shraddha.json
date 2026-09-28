@@ -1,0 +1,191 @@
+{
+ "_about": "Śrāddha rules. The tithi of death governs; the day is the one whose aparāhṇa holds that tithi longest. Special Śrāddhas of the Pitṛ Pakṣa are listed with the rule that dates each.",
+ "tithi_rule": {
+  "window": "aparahna",
+  "prefer": "max-overlap",
+  "basis": {
+   "refs": [
+    "nirnaya-sindhu",
+    "drik-shraddha-2026"
+   ],
+   "status": "convention",
+   "note": "Aparāhṇa-vyāpinī tithi. Where the tithi holds the aparāhṇa of two days, the day holding more of it is taken; ties go to the first day."
+  }
+ },
+ "ritual_windows": [
+  "kutapa",
+  "rauhina",
+  "aparahna"
+ ],
+ "pitru_paksha": {
+  "masa": "Bhādrapada",
+  "includes_purnima": true,
+  "basis": {
+   "refs": [
+    "drik-shraddha-2026"
+   ],
+   "status": "retrieved",
+   "note": "The dark fortnight of Bhādrapada in amānta reckoning, which is Āśvina in pūrṇimānta reckoning."
+  }
+ },
+ "paksha_rule": {
+  "note": "A death on a tithi of either pakṣa has its Pitṛ Pakṣa Śrāddha on the same tithi number.",
+  "basis": {
+   "refs": [
+    "drik-navami-2026"
+   ],
+   "status": "retrieved"
+  }
+ },
+ "adhika_rule": {
+  "death_in_adhika": "same-name-nija",
+  "basis": {
+   "refs": [
+    "nirnaya-sindhu"
+   ],
+   "status": "not-established",
+   "note": "Shown with both candidates when an adhika month is involved."
+  }
+ },
+ "special": [
+  {
+   "id": "purnima-shraddha",
+   "name": "Pūrṇimā Śrāddha",
+   "kind": "tithi",
+   "paksha": "shukla",
+   "tithi": 15,
+   "for": "deaths on Pūrṇimā",
+   "basis": {
+    "refs": [
+     "drik-shraddha-2026"
+    ],
+    "status": "retrieved"
+   }
+  },
+  {
+   "id": "maha-bharani",
+   "name": "Mahā Bharaṇī Śrāddha",
+   "kind": "nakshatra",
+   "nakshatra": 1,
+   "window": "aparahna",
+   "for": "Bharaṇī, whose deity is Yama",
+   "basis": {
+    "refs": [
+     "drik-shraddha-2026",
+     "harishyam-2026"
+    ],
+    "status": "retrieved"
+   }
+  },
+  {
+   "id": "avidhava-navami",
+   "name": "Avidhavā Navamī, Mātṛ Navamī",
+   "kind": "tithi",
+   "paksha": "krishna",
+   "tithi": 9,
+   "for": "women of the family who died before their husbands",
+   "basis": {
+    "refs": [
+     "drik-navami-2026"
+    ],
+    "status": "retrieved"
+   }
+  },
+  {
+   "id": "magha-shraddha",
+   "name": "Maghā Śrāddha",
+   "kind": "nakshatra",
+   "nakshatra": 9,
+   "window": "aparahna",
+   "for": "Maghā, whose deity is the Pitṛs",
+   "basis": {
+    "refs": [
+     "drik-shraddha-2026",
+     "harishyam-2026"
+    ],
+    "status": "retrieved"
+   }
+  },
+  {
+   "id": "ghata-chaturdashi",
+   "name": "Caturdaśī Śrāddha, Ghāta Caturdaśī",
+   "kind": "tithi",
+   "paksha": "krishna",
+   "tithi": 14,
+   "for": "those who died by weapons or accidents",
+   "basis": {
+    "refs": [
+     "divinehindu-2026"
+    ],
+    "status": "retrieved"
+   }
+  },
+  {
+   "id": "sarvapitri-amavasya",
+   "name": "Sarvapitṛ Amāvāsyā, Mahālaya",
+   "kind": "tithi",
+   "paksha": "krishna",
+   "tithi": 15,
+   "for": "every ancestor, and any whose tithi is not known",
+   "basis": {
+    "refs": [
+     "drik-shraddha-2026",
+     "harishyam-2026"
+    ],
+    "status": "retrieved"
+   }
+  },
+  {
+   "id": "matamaha",
+   "name": "Mātāmaha Śrāddha",
+   "kind": "tithi",
+   "masa": "Āśvina",
+   "paksha": "shukla",
+   "tithi": 1,
+   "for": "the maternal grandfather",
+   "basis": {
+    "refs": [
+     "dharma-sindhu"
+    ],
+    "status": "not-verified"
+   }
+  },
+  {
+   "id": "gajachchhaya",
+   "name": "Gajacchāyā Yoga",
+   "kind": "not-computed",
+   "for": "listed by Drik among Śrāddha days",
+   "basis": {
+    "refs": [
+     "drik-shraddha-2026"
+    ],
+    "status": "not-established",
+    "note": "The rule that dates it is not yet retrieved; it is listed, not computed."
+   }
+  }
+ ],
+ "occasions_96": {
+  "basis": {
+   "refs": [
+    "drik-shraddha-2026",
+    "dharma-sindhu"
+   ],
+   "status": "partial"
+  },
+  "computed": {
+   "amavasya": 12,
+   "sankranti": 12,
+   "mahalaya": 15,
+   "vyatipata": 12,
+   "vaidhriti": 12
+  },
+  "not_established": {
+   "yugadi": 4,
+   "manvadi": 14,
+   "ashtaka": 5,
+   "anvashtaka": 5,
+   "purvedyuh": 5
+  },
+  "note": "The five uncomputed families need their tithi lists retrieved from a source before they are dated."
+ }
+}

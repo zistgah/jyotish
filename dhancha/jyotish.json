@@ -1,0 +1,57 @@
+{
+ "id": "jyotish",
+ "name": "Jyotish",
+ "script": "ज्योतिष",
+ "gloss": "the reckoning of time by the lights of the sky; a Sanatan panchang and jyotisha",
+ "fakir": {
+  "isic": [],
+  "isco": [],
+  "isced": [],
+  "agi_layers": [],
+  "ilm_languages": []
+ },
+ "interface": "lib/jyotish.js",
+ "registry": "config/",
+ "implementations": [
+  "javascript"
+ ],
+ "ports": [],
+ "conformance": [
+  {
+   "id": "JY-C1",
+   "condition": "apparent longitudes against an independent ephemeris, 1900 to 2100",
+   "criterion": "Sun at most 1, planets at most 5, Moon at most 10",
+   "unit": "arcsecond",
+   "unit_ucum": "''"
+  },
+  {
+   "id": "JY-C2",
+   "condition": "sunrise and sunset against an independent ephemeris",
+   "criterion": "at most 5",
+   "unit": "second",
+   "unit_ucum": "s"
+  },
+  {
+   "id": "JY-C3",
+   "condition": "published 2026 observance and Pitru Paksha dates",
+   "criterion": "every anchor in config/festivals.json and the published Pitru Paksha list",
+   "unit": "not established",
+   "unit_ucum": "not established"
+  }
+ ],
+ "verbs": "not established",
+ "attachment_points": [],
+ "state": "built",
+ "distinctive_nouns": [
+  "tithi",
+  "nakshatra",
+  "karana",
+  "vyapti",
+  "muhurta",
+  "shraddha",
+  "kundali",
+  "dasha",
+  "koota"
+ ],
+ "correlates": []
+}

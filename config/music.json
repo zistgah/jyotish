@@ -1,0 +1,218 @@
+{
+ "_about": "The music of the orbs. Just-intonation ratios for the twelve svaras, rāga scales, the prahar each rāga belongs to, and one voice per graha.",
+ "sa_hz": 261.63,
+ "svaras": {
+  "Sa": [
+   1,
+   1
+  ],
+  "re": [
+   16,
+   15
+  ],
+  "Re": [
+   9,
+   8
+  ],
+  "ga": [
+   6,
+   5
+  ],
+  "Ga": [
+   5,
+   4
+  ],
+  "Ma": [
+   4,
+   3
+  ],
+  "MA": [
+   45,
+   32
+  ],
+  "Pa": [
+   3,
+   2
+  ],
+  "dha": [
+   8,
+   5
+  ],
+  "Dha": [
+   5,
+   3
+  ],
+  "ni": [
+   9,
+   5
+  ],
+  "Ni": [
+   15,
+   8
+  ]
+ },
+ "ragas": [
+  {
+   "id": "bhairav",
+   "name": "Bhairava",
+   "scale": [
+    "Sa",
+    "re",
+    "Ga",
+    "Ma",
+    "Pa",
+    "dha",
+    "Ni"
+   ]
+  },
+  {
+   "id": "todi",
+   "name": "Toḍī",
+   "scale": [
+    "Sa",
+    "re",
+    "ga",
+    "MA",
+    "Pa",
+    "dha",
+    "Ni"
+   ]
+  },
+  {
+   "id": "bhimpalasi",
+   "name": "Bhīmapalāsī",
+   "scale": [
+    "Sa",
+    "Re",
+    "ga",
+    "Ma",
+    "Pa",
+    "Dha",
+    "ni"
+   ]
+  },
+  {
+   "id": "multani",
+   "name": "Multānī",
+   "scale": [
+    "Sa",
+    "re",
+    "ga",
+    "MA",
+    "Pa",
+    "dha",
+    "Ni"
+   ]
+  },
+  {
+   "id": "yaman",
+   "name": "Yaman",
+   "scale": [
+    "Sa",
+    "Re",
+    "Ga",
+    "MA",
+    "Pa",
+    "Dha",
+    "Ni"
+   ]
+  },
+  {
+   "id": "bhupali",
+   "name": "Bhūpālī",
+   "scale": [
+    "Sa",
+    "Re",
+    "Ga",
+    "Pa",
+    "Dha"
+   ]
+  },
+  {
+   "id": "malkauns",
+   "name": "Mālakauṁsa",
+   "scale": [
+    "Sa",
+    "ga",
+    "Ma",
+    "dha",
+    "ni"
+   ]
+  },
+  {
+   "id": "lalit",
+   "name": "Lalita",
+   "scale": [
+    "Sa",
+    "re",
+    "Ga",
+    "Ma",
+    "MA",
+    "dha",
+    "Ni"
+   ]
+  }
+ ],
+ "prahar": {
+  "0": "bhairav",
+  "1": "todi",
+  "2": "bhimpalasi",
+  "3": "multani",
+  "4": "yaman",
+  "5": "bhupali",
+  "6": "malkauns",
+  "7": "lalit"
+ },
+ "voices": [
+  {
+   "graha": "Sun",
+   "octave": -1,
+   "gain": 0.22
+  },
+  {
+   "graha": "Moon",
+   "octave": 0,
+   "gain": 0.2
+  },
+  {
+   "graha": "Mars",
+   "octave": 0,
+   "gain": 0.1
+  },
+  {
+   "graha": "Mercury",
+   "octave": 1,
+   "gain": 0.08
+  },
+  {
+   "graha": "Jupiter",
+   "octave": -1,
+   "gain": 0.12
+  },
+  {
+   "graha": "Venus",
+   "octave": 1,
+   "gain": 0.1
+  },
+  {
+   "graha": "Saturn",
+   "octave": -2,
+   "gain": 0.12
+  },
+  {
+   "graha": "Rahu",
+   "octave": -2,
+   "gain": 0.05
+  },
+  {
+   "graha": "Ketu",
+   "octave": 2,
+   "gain": 0.04
+  }
+ ],
+ "basis": {
+  "refs": [],
+  "status": "convention",
+  "note": "Five-limit just intonation. The prahar assignments follow the common Hindustani samaya; the mapping from longitude to svara is this instrument's own, not a tradition."
+ }
+}

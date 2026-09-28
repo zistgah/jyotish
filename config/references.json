@@ -1,0 +1,202 @@
+{
+ "_about": "Sources. A URL appears only where it was retrieved; printed works are cited by title. Status words used across the configuration: retrieved (checked against the source named), convention (the common rule, source named but not quoted), partial (part of the rule is applied, the rest is named as missing), sources-differ (a table is chosen and labelled), not-verified, not-established, popular (no classical text behind it here).",
+ "entries": [
+  {
+   "id": "almanac-2003",
+   "title": "Moon phase calendar, September 2003",
+   "publisher": "Old Farmer's Almanac",
+   "url": "https://cdn.almanac.com/astronomy/moon/calendar/NV/Ely/2003-09",
+   "status": "retrieved 2026-09-28",
+   "used_for": "The new moon of 25 Sep 2003, 8:09 PM Pacific, which is 08:39 IST on 26 Sep"
+  },
+  {
+   "id": "astrolozyy-2025",
+   "title": "Kundli Matching for Marriage, Complete Guide",
+   "publisher": "Astrolozyy",
+   "url": "https://astrolozyy.com/how-to-match-kundli-for-marriage.html",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "astronidan-2026",
+   "title": "Gana Koota: Dev, Manushya and Rakshasa",
+   "publisher": "Astronidan",
+   "url": "https://astronidan.com/blog/perfect-gana-in-marriage-matching/",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "astroyogi-gana-2026",
+   "title": "Gana Koota in Kundli Matching",
+   "publisher": "Astroyogi",
+   "url": "https://www.astroyogi.com/blog/gana-koota-in-kundli-matching.aspx",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "bphs",
+   "title": "Bṛhat Parāśara Horā Śāstra",
+   "kind": "text"
+  },
+  {
+   "id": "burgess-1860",
+   "title": "Translation of the Sûrya-Siddhânta",
+   "author": "Ebenezer Burgess",
+   "year": 1860,
+   "kind": "text"
+  },
+  {
+   "id": "chakra-2026-anchors",
+   "title": "Chakra test suite, published 2026 dates",
+   "publisher": "project-ilm/chakra",
+   "url": "https://github.com/project-ilm/chakra",
+   "status": "retrieved 2026-09-28",
+   "note": "test/plus-test.js, test/plus2-test.js and test/test-events.js at 13fa67d"
+  },
+  {
+   "id": "chakra-v1",
+   "title": "Chakra",
+   "publisher": "project-ilm",
+   "url": "https://github.com/project-ilm/chakra",
+   "status": "retrieved 2026-09-28",
+   "doi": "10.5281/zenodo.21253628"
+  },
+  {
+   "id": "dharma-sindhu",
+   "title": "Dharma Sindhu",
+   "author": "Kāśīnātha Upādhyāya",
+   "kind": "text"
+  },
+  {
+   "id": "divinehindu-2026",
+   "title": "Pitru Paksha 2026: Shraddh dates, tithi, vidhi",
+   "publisher": "DivineHindu",
+   "url": "https://www.divinehindu.in/blogs/news/pitru-paksha-2026-shraddh-dates-tithi-vidhi",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "drik-app",
+   "title": "Hindu Calendar, Drik Panchang (app listing)",
+   "publisher": "Drik Panchang",
+   "url": "https://play.google.com/store/apps/details?id=com.drikp.core&hl=en_US",
+   "status": "retrieved 2026-09-28",
+   "used_for": "The feature list Jyotish matches"
+  },
+  {
+   "id": "drik-kundali",
+   "title": "Janma Kundali",
+   "publisher": "Drik Panchang",
+   "url": "https://www.drikpanchang.com/jyotisha/kundali/janma-kundali.html",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "drik-navami-2026",
+   "title": "Navami Shraddha date and time, 2026",
+   "publisher": "Drik Panchang",
+   "url": "https://www.drikpanchang.com/shraddha/tithi/navami-shraddha-date-time.html?year=2026",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "drik-shraddha-2026",
+   "title": "Pitru Paksha Shraddha dates",
+   "publisher": "Drik Panchang",
+   "url": "https://www.drikpanchang.com/shraddha/pitru-paksha-shraddha-dates.html",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "espenak-meeus",
+   "title": "Polynomial expressions for Delta T",
+   "author": "F. Espenak and J. Meeus",
+   "kind": "text",
+   "note": "As implemented in pymeeus Epoch.tt2ut"
+  },
+  {
+   "id": "harishyam-2026",
+   "title": "Understanding Pitru Paksha 2026: complete Shradh tithi calendar",
+   "publisher": "Harishyam",
+   "url": "https://harishyam.com/blogs/news/understanding-pitru-paksha-2026-complete-shradh-tithi-calendar-and-key-dates",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "icrc-1955",
+   "title": "Report of the Calendar Reform Committee",
+   "publisher": "Government of India, CSIR",
+   "year": 1955,
+   "kind": "text"
+  },
+  {
+   "id": "meeus-1998",
+   "title": "Astronomical Algorithms, 2nd edition",
+   "author": "Jean Meeus",
+   "year": 1998,
+   "kind": "text"
+  },
+  {
+   "id": "muhurta-chintamani",
+   "title": "Muhūrta Cintāmaṇi",
+   "author": "Rāma Daivajña",
+   "kind": "text"
+  },
+  {
+   "id": "nirnaya-sindhu",
+   "title": "Nirṇaya Sindhu",
+   "author": "Kamalākara Bhaṭṭa",
+   "kind": "text"
+  },
+  {
+   "id": "phaladeepika",
+   "title": "Phaladīpikā",
+   "author": "Mantreśvara",
+   "kind": "text"
+  },
+  {
+   "id": "pymeeus",
+   "title": "PyMeeus",
+   "publisher": "Python Package Index",
+   "url": "https://pypi.org/project/PyMeeus/",
+   "kind": "software",
+   "licence": "LGPL-3.0",
+   "note": "Source of the coefficient tables; see THIRD_PARTY.md"
+  },
+  {
+   "id": "pyswisseph-oracle",
+   "title": "pyswisseph (Swiss Ephemeris, Moshier mode)",
+   "publisher": "Python Package Index",
+   "url": "https://pypi.org/project/pyswisseph/",
+   "kind": "software",
+   "licence": "AGPL-3.0",
+   "note": "An external oracle only. Its outputs are test numbers; no code of it is in this repository."
+  },
+  {
+   "id": "sahita-2026",
+   "title": "Ashta Koota Matching, complete guide",
+   "publisher": "Sahita",
+   "url": "https://sahitavivahamatching.com/ashta-koota-matching-guide/",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "surya-siddhanta-burgess",
+   "title": "Sūrya Siddhānta (Burgess translation)",
+   "kind": "text",
+   "see": "burgess-1860"
+  },
+  {
+   "id": "vsop87",
+   "title": "Planetary theories in rectangular and spherical variables: VSOP87 solutions",
+   "author": "P. Bretagnon and G. Francou",
+   "year": 1988,
+   "kind": "text"
+  },
+  {
+   "id": "wiki-pitru-paksha",
+   "title": "Pitru Paksha",
+   "publisher": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pitru_Paksha",
+   "status": "retrieved 2026-09-28"
+  },
+  {
+   "id": "wiki-surya-siddhanta",
+   "title": "Surya Siddhanta",
+   "publisher": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Surya_Siddhanta",
+   "status": "retrieved 2026-09-28"
+  }
+ ]
+}

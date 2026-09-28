@@ -1,0 +1,750 @@
+{
+ "_about": "Names and fixed tables of the panchang. Names are Chakra's own (project-ilm/chakra 13fa67d) unless a longer form is given. Every rule block carries a basis with reference ids from references.json.",
+ "rashi": [
+  {
+   "name": "Meṣa",
+   "lord": "Mars",
+   "quality": "movable",
+   "element": "fire"
+  },
+  {
+   "name": "Vṛṣabha",
+   "lord": "Venus",
+   "quality": "fixed",
+   "element": "earth"
+  },
+  {
+   "name": "Mithuna",
+   "lord": "Mercury",
+   "quality": "dual",
+   "element": "air"
+  },
+  {
+   "name": "Karka",
+   "lord": "Moon",
+   "quality": "movable",
+   "element": "water"
+  },
+  {
+   "name": "Siṃha",
+   "lord": "Sun",
+   "quality": "fixed",
+   "element": "fire"
+  },
+  {
+   "name": "Kanyā",
+   "lord": "Mercury",
+   "quality": "dual",
+   "element": "earth"
+  },
+  {
+   "name": "Tulā",
+   "lord": "Venus",
+   "quality": "movable",
+   "element": "air"
+  },
+  {
+   "name": "Vṛścika",
+   "lord": "Mars",
+   "quality": "fixed",
+   "element": "water"
+  },
+  {
+   "name": "Dhanu",
+   "lord": "Jupiter",
+   "quality": "dual",
+   "element": "fire"
+  },
+  {
+   "name": "Makara",
+   "lord": "Saturn",
+   "quality": "movable",
+   "element": "earth"
+  },
+  {
+   "name": "Kumbha",
+   "lord": "Saturn",
+   "quality": "fixed",
+   "element": "air"
+  },
+  {
+   "name": "Mīna",
+   "lord": "Jupiter",
+   "quality": "dual",
+   "element": "water"
+  }
+ ],
+ "nakshatra": [
+  {
+   "name": "Aśvinī",
+   "short": "Aśvinī",
+   "lord": "Ketu",
+   "deity": "Aśvinī Kumāras",
+   "gana": 0,
+   "nadi": 0,
+   "yoni": 0
+  },
+  {
+   "name": "Bharaṇī",
+   "short": "Bharaṇī",
+   "lord": "Venus",
+   "deity": "Yama",
+   "gana": 1,
+   "nadi": 1,
+   "yoni": 1
+  },
+  {
+   "name": "Kṛttikā",
+   "short": "Kṛttikā",
+   "lord": "Sun",
+   "deity": "Agni",
+   "gana": 2,
+   "nadi": 2,
+   "yoni": 2
+  },
+  {
+   "name": "Rohiṇī",
+   "short": "Rohiṇī",
+   "lord": "Moon",
+   "deity": "Brahmā",
+   "gana": 1,
+   "nadi": 2,
+   "yoni": 3
+  },
+  {
+   "name": "Mṛgaśira",
+   "short": "Mṛgaśira",
+   "lord": "Mars",
+   "deity": "Soma",
+   "gana": 0,
+   "nadi": 1,
+   "yoni": 3
+  },
+  {
+   "name": "Ārdrā",
+   "short": "Ārdrā",
+   "lord": "Rahu",
+   "deity": "Rudra",
+   "gana": 1,
+   "nadi": 0,
+   "yoni": 4
+  },
+  {
+   "name": "Punarvasu",
+   "short": "Punarvasu",
+   "lord": "Jupiter",
+   "deity": "Aditi",
+   "gana": 0,
+   "nadi": 0,
+   "yoni": 5
+  },
+  {
+   "name": "Puṣya",
+   "short": "Puṣya",
+   "lord": "Saturn",
+   "deity": "Bṛhaspati",
+   "gana": 0,
+   "nadi": 1,
+   "yoni": 2
+  },
+  {
+   "name": "Āśleṣā",
+   "short": "Āśleṣā",
+   "lord": "Mercury",
+   "deity": "Sarpas",
+   "gana": 2,
+   "nadi": 2,
+   "yoni": 5
+  },
+  {
+   "name": "Maghā",
+   "short": "Maghā",
+   "lord": "Ketu",
+   "deity": "Pitṛs",
+   "gana": 2,
+   "nadi": 2,
+   "yoni": 6
+  },
+  {
+   "name": "Pūrva Phalgunī",
+   "short": "P.Phalgunī",
+   "lord": "Venus",
+   "deity": "Bhaga",
+   "gana": 1,
+   "nadi": 1,
+   "yoni": 6
+  },
+  {
+   "name": "Uttara Phalgunī",
+   "short": "U.Phalgunī",
+   "lord": "Sun",
+   "deity": "Aryaman",
+   "gana": 1,
+   "nadi": 0,
+   "yoni": 7
+  },
+  {
+   "name": "Hasta",
+   "short": "Hasta",
+   "lord": "Moon",
+   "deity": "Savitṛ",
+   "gana": 0,
+   "nadi": 0,
+   "yoni": 8
+  },
+  {
+   "name": "Chitrā",
+   "short": "Chitrā",
+   "lord": "Mars",
+   "deity": "Tvaṣṭṛ",
+   "gana": 2,
+   "nadi": 1,
+   "yoni": 9
+  },
+  {
+   "name": "Svātī",
+   "short": "Svātī",
+   "lord": "Rahu",
+   "deity": "Vāyu",
+   "gana": 0,
+   "nadi": 2,
+   "yoni": 8
+  },
+  {
+   "name": "Viśākhā",
+   "short": "Viśākhā",
+   "lord": "Jupiter",
+   "deity": "Indrāgnī",
+   "gana": 2,
+   "nadi": 2,
+   "yoni": 9
+  },
+  {
+   "name": "Anurādhā",
+   "short": "Anurādhā",
+   "lord": "Saturn",
+   "deity": "Mitra",
+   "gana": 0,
+   "nadi": 1,
+   "yoni": 10
+  },
+  {
+   "name": "Jyeṣṭhā",
+   "short": "Jyeṣṭhā",
+   "lord": "Mercury",
+   "deity": "Indra",
+   "gana": 2,
+   "nadi": 0,
+   "yoni": 10
+  },
+  {
+   "name": "Mūla",
+   "short": "Mūla",
+   "lord": "Ketu",
+   "deity": "Nirṛti",
+   "gana": 2,
+   "nadi": 0,
+   "yoni": 4
+  },
+  {
+   "name": "Pūrva Āṣāḍhā",
+   "short": "P.Āṣāḍhā",
+   "lord": "Venus",
+   "deity": "Āpas",
+   "gana": 1,
+   "nadi": 1,
+   "yoni": 11
+  },
+  {
+   "name": "Uttara Āṣāḍhā",
+   "short": "U.Āṣāḍhā",
+   "lord": "Sun",
+   "deity": "Viśvedevas",
+   "gana": 1,
+   "nadi": 2,
+   "yoni": 12
+  },
+  {
+   "name": "Śravaṇa",
+   "short": "Śravaṇa",
+   "lord": "Moon",
+   "deity": "Viṣṇu",
+   "gana": 0,
+   "nadi": 2,
+   "yoni": 11
+  },
+  {
+   "name": "Dhaniṣṭhā",
+   "short": "Dhaniṣṭhā",
+   "lord": "Mars",
+   "deity": "Vasus",
+   "gana": 2,
+   "nadi": 1,
+   "yoni": 13
+  },
+  {
+   "name": "Śatabhiṣā",
+   "short": "Śatabhiṣā",
+   "lord": "Rahu",
+   "deity": "Varuṇa",
+   "gana": 2,
+   "nadi": 0,
+   "yoni": 0
+  },
+  {
+   "name": "Pūrva Bhādrapadā",
+   "short": "P.Bhādra",
+   "lord": "Jupiter",
+   "deity": "Aja Ekapāda",
+   "gana": 1,
+   "nadi": 0,
+   "yoni": 13
+  },
+  {
+   "name": "Uttara Bhādrapadā",
+   "short": "U.Bhādra",
+   "lord": "Saturn",
+   "deity": "Ahirbudhnya",
+   "gana": 1,
+   "nadi": 1,
+   "yoni": 7
+  },
+  {
+   "name": "Revatī",
+   "short": "Revatī",
+   "lord": "Mercury",
+   "deity": "Pūṣan",
+   "gana": 0,
+   "nadi": 2,
+   "yoni": 1
+  }
+ ],
+ "nakshatra_attributes": {
+  "gana": [
+   "Deva",
+   "Manuṣya",
+   "Rākṣasa"
+  ],
+  "nadi": [
+   "Ādi",
+   "Madhya",
+   "Antya"
+  ],
+  "yoni": [
+   "Horse",
+   "Elephant",
+   "Sheep",
+   "Serpent",
+   "Dog",
+   "Cat",
+   "Rat",
+   "Cow",
+   "Buffalo",
+   "Tiger",
+   "Deer",
+   "Monkey",
+   "Mongoose",
+   "Lion"
+  ],
+  "basis": {
+   "refs": [
+    "bphs",
+    "muhurta-chintamani",
+    "astroyogi-gana-2026"
+   ],
+   "status": "convention",
+   "note": "Gana lists agree with the retrieved astroyogi list; deities, lords, nadi and yoni follow the standard tables."
+  }
+ },
+ "tithi": [
+  "Pratipadā",
+  "Dvitīyā",
+  "Tṛtīyā",
+  "Chaturthī",
+  "Pañchamī",
+  "Ṣaṣṭhī",
+  "Saptamī",
+  "Aṣṭamī",
+  "Navamī",
+  "Daśamī",
+  "Ekādaśī",
+  "Dvādaśī",
+  "Trayodaśī",
+  "Chaturdaśī",
+  "Pūrṇimā"
+ ],
+ "amavasya": "Amāvāsyā",
+ "paksha": [
+  "Śukla",
+  "Kṛṣṇa"
+ ],
+ "yoga": [
+  "Viṣkambha",
+  "Prīti",
+  "Āyuṣmān",
+  "Saubhāgya",
+  "Śobhana",
+  "Atigaṇḍa",
+  "Sukarman",
+  "Dhṛti",
+  "Śūla",
+  "Gaṇḍa",
+  "Vṛddhi",
+  "Dhruva",
+  "Vyāghāta",
+  "Harṣaṇa",
+  "Vajra",
+  "Siddhi",
+  "Vyatīpāta",
+  "Varīyān",
+  "Parigha",
+  "Śiva",
+  "Siddha",
+  "Sādhya",
+  "Śubha",
+  "Śukla",
+  "Brahma",
+  "Indra",
+  "Vaidhṛti"
+ ],
+ "karana": {
+  "movable": [
+   "Bava",
+   "Bālava",
+   "Kaulava",
+   "Taitila",
+   "Garaja",
+   "Vaṇija",
+   "Viṣṭi"
+  ],
+  "fixed": {
+   "57": "Śakuni",
+   "58": "Catuṣpāda",
+   "59": "Nāga",
+   "0": "Kiṃstughna"
+  },
+  "basis": {
+   "refs": [
+    "surya-siddhanta-burgess"
+   ],
+   "status": "convention"
+  }
+ },
+ "vara": [
+  "Ravivāra",
+  "Somavāra",
+  "Maṅgalavāra",
+  "Budhavāra",
+  "Guruvāra",
+  "Śukravāra",
+  "Śanivāra"
+ ],
+ "vara_lord": [
+  "Sun",
+  "Moon",
+  "Mars",
+  "Mercury",
+  "Jupiter",
+  "Venus",
+  "Saturn"
+ ],
+ "masa": [
+  "Caitra",
+  "Vaiśākha",
+  "Jyeṣṭha",
+  "Āṣāḍha",
+  "Śrāvaṇa",
+  "Bhādrapada",
+  "Āśvina",
+  "Kārtika",
+  "Mārgaśīrṣa",
+  "Pauṣa",
+  "Māgha",
+  "Phālguna"
+ ],
+ "samvatsara": [
+  "Prabhava",
+  "Vibhava",
+  "Śukla",
+  "Pramoda",
+  "Prajāpati",
+  "Aṅgirasa",
+  "Śrīmukha",
+  "Bhāva",
+  "Yuva",
+  "Dhātā",
+  "Īśvara",
+  "Bahudhānya",
+  "Pramādī",
+  "Vikrama",
+  "Vṛṣa",
+  "Chitrabhānu",
+  "Svabhānu",
+  "Tāraṇa",
+  "Pārthiva",
+  "Vyaya",
+  "Sarvajit",
+  "Sarvadhārī",
+  "Virodhī",
+  "Vikṛti",
+  "Khara",
+  "Nandana",
+  "Vijaya",
+  "Jaya",
+  "Manmatha",
+  "Durmukhī",
+  "Hevilambī",
+  "Vilambī",
+  "Vikārī",
+  "Śārvarī",
+  "Plava",
+  "Śubhakṛt",
+  "Śobhakṛt",
+  "Krodhī",
+  "Viśvāvasu",
+  "Parābhava",
+  "Plavaṅga",
+  "Kīlaka",
+  "Saumya",
+  "Sādhāraṇa",
+  "Virodhikṛt",
+  "Paridhāvī",
+  "Pramādīcha",
+  "Ānanda",
+  "Rākṣasa",
+  "Nala",
+  "Piṅgala",
+  "Kālayukta",
+  "Siddhārthī",
+  "Raudra",
+  "Durmati",
+  "Dundubhi",
+  "Rudhirodgārī",
+  "Raktākṣī",
+  "Krodhana",
+  "Akṣaya"
+ ],
+ "samvat": {
+  "vikram_offset": 57,
+  "shaka_from_vikram": -135,
+  "kali_from_shaka": 3179,
+  "samvatsara_index": "(shaka + 11) mod 60, from Caitra Śukla Pratipadā",
+  "basis": {
+   "refs": [
+    "icrc-1955"
+   ],
+   "status": "convention",
+   "note": "Southern (lunar) samvatsara reckoning; the northern Bārhaspatya reckoning is not established here."
+  }
+ },
+ "ritu": {
+  "names": [
+   "Vasanta",
+   "Grīṣma",
+   "Varṣā",
+   "Śarad",
+   "Hemanta",
+   "Śiśira"
+  ],
+  "vedic_by_masa": [
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   4,
+   5,
+   5
+  ],
+  "drik_by_tropical_sun_start_deg": [
+   330,
+   30,
+   90,
+   150,
+   210,
+   270
+  ],
+  "basis": {
+   "refs": [
+    "drik-app"
+   ],
+   "status": "convention"
+  }
+ },
+ "ayana": {
+  "drik": "tropical Sun in [270,90) is Uttarāyaṇa",
+  "vedic": "sidereal Sun from Makara to the end of Mithuna is Uttarāyaṇa"
+ },
+ "day_parts": {
+  "five": [
+   "Prātaḥ",
+   "Saṅgava",
+   "Madhyāhna",
+   "Aparāhṇa",
+   "Sāyāhna"
+  ],
+  "basis": {
+   "refs": [
+    "nirnaya-sindhu"
+   ],
+   "status": "convention",
+   "note": "Daylight divided in five equal parts; Madhyāhna is the third and Aparāhṇa the fourth."
+  }
+ },
+ "muhurtas": {
+  "day_count": 15,
+  "night_count": 15,
+  "abhijit_day_index": 7,
+  "brahma_night_index": 13,
+  "kutapa_day_index": 7,
+  "rauhina_day_index": 8,
+  "nishitha_night_index": 7,
+  "pradosha_night_fraction": 0.2,
+  "abhijit_excluded_on_vara": [
+   3
+  ],
+  "basis": {
+   "refs": [
+    "drik-shraddha-2026",
+    "muhurta-chintamani"
+   ],
+   "status": "convention",
+   "note": "Kutapa and Rauhina are the 8th and 9th day muhurtas; Pradoṣa is the first fifth of the night; Niśītha is the 8th night muhurta."
+  }
+ },
+ "kalam": {
+  "parts": 8,
+  "rahu": [
+   8,
+   2,
+   7,
+   5,
+   6,
+   4,
+   3
+  ],
+  "yamaganda": [
+   5,
+   4,
+   3,
+   2,
+   1,
+   7,
+   6
+  ],
+  "gulika": [
+   7,
+   6,
+   5,
+   4,
+   3,
+   2,
+   1
+  ],
+  "note": "Index by vara, Sunday first; value is the 1-based eighth of daylight.",
+  "basis": {
+   "refs": [
+    "drik-app"
+   ],
+   "status": "convention"
+  }
+ },
+ "hora_order": [
+  "Sun",
+  "Venus",
+  "Mercury",
+  "Moon",
+  "Saturn",
+  "Jupiter",
+  "Mars"
+ ],
+ "choghadiya": {
+  "by_lord": {
+   "Sun": "Udvega",
+   "Venus": "Chara",
+   "Mercury": "Lābha",
+   "Moon": "Amṛta",
+   "Saturn": "Kāla",
+   "Jupiter": "Śubha",
+   "Mars": "Roga"
+  },
+  "quality": {
+   "Amṛta": "good",
+   "Śubha": "good",
+   "Lābha": "good",
+   "Chara": "neutral",
+   "Udvega": "bad",
+   "Kāla": "bad",
+   "Roga": "bad"
+  },
+  "day_first_lord": "the lord of the vara",
+  "night_first_lord": "the lord of the fifth vara counted from this vara",
+  "basis": {
+   "refs": [
+    "drik-app"
+   ],
+   "status": "convention",
+   "note": "Successive segments follow the horā order."
+  }
+ },
+ "flags": {
+  "panchaka": {
+   "moon_sidereal_from": 300,
+   "moon_sidereal_to": 360,
+   "basis": {
+    "refs": [
+     "drik-app"
+    ],
+    "status": "convention",
+    "note": "Moon in Kumbha and Mīna, from the third pada of Dhaniṣṭhā."
+   }
+  },
+  "ganda_moola": {
+   "nakshatras": [
+    0,
+    8,
+    9,
+    17,
+    18,
+    26
+   ],
+   "basis": {
+    "refs": [
+     "drik-app"
+    ],
+    "status": "convention"
+   }
+  },
+  "bhadra_vasa": {
+   "svarga": [
+    0,
+    1,
+    2,
+    7
+   ],
+   "patala": [
+    5,
+    6,
+    8,
+    9
+   ],
+   "bhuloka": [
+    3,
+    4,
+    10,
+    11
+   ],
+   "basis": {
+    "refs": [
+     "muhurta-chintamani"
+    ],
+    "status": "convention",
+    "note": "By the Moon's sign; Bhadrā on earth is the one avoided."
+   }
+  }
+ }
+}

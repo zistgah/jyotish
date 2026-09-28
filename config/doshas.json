@@ -1,0 +1,241 @@
+{
+ "_about": "Doṣa rules. Each rule states what it tests, the school it follows and the conditions that cancel it. The engine applies a rule only as written here; nothing is inferred beyond it.",
+ "rules": [
+  {
+   "id": "mangal",
+   "name": "Maṅgala Doṣa",
+   "type": "mars-houses",
+   "houses": [
+    1,
+    2,
+    4,
+    7,
+    8,
+    12
+   ],
+   "from": [
+    "Asc",
+    "Moon",
+    "Venus"
+   ],
+   "schools": {
+    "north": [
+     1,
+     4,
+     7,
+     8,
+     12
+    ],
+    "south": [
+     1,
+     2,
+     4,
+     7,
+     8,
+     12
+    ]
+   },
+   "school": "south",
+   "cancellations": [
+    {
+     "id": "own-or-exalted",
+     "text": "Mars in its own sign (Meṣa, Vṛścika) or exalted (Makara)",
+     "test": "mars-sign-in",
+     "signs": [
+      0,
+      7,
+      9
+     ]
+    },
+    {
+     "id": "house-sign",
+     "text": "Mars in the 2nd in Mithuna or Kanyā, the 4th in Meṣa or Vṛścika, the 7th in Karka or Makara, the 8th in Dhanu or Mīna, the 12th in Vṛṣabha or Tulā",
+     "test": "mars-house-sign",
+     "pairs": {
+      "2": [
+       2,
+       5
+      ],
+      "4": [
+       0,
+       7
+      ],
+      "7": [
+       3,
+       9
+      ],
+      "8": [
+       8,
+       11
+      ],
+      "12": [
+       1,
+       6
+      ]
+     }
+    },
+    {
+     "id": "jupiter-with-mars",
+     "text": "Jupiter in the same sign as Mars",
+     "test": "conjunct",
+     "a": "Mars",
+     "b": "Jupiter"
+    },
+    {
+     "id": "both-partners",
+     "text": "Both partners carry the doṣa",
+     "test": "match-both"
+    }
+   ],
+   "basis": {
+    "refs": [
+     "drik-kundali",
+     "muhurta-chintamani"
+    ],
+    "status": "convention",
+    "note": "Houses as Drik states them (1, 2, 4, 7, 8, 12); many schools use fewer. Cancellations are listed where they hold and do not erase the finding."
+   }
+  },
+  {
+   "id": "kalasarpa",
+   "name": "Kālasarpa Doṣa",
+   "type": "kalasarpa",
+   "partial_allows": 0,
+   "types": [
+    "Ananta",
+    "Kulika",
+    "Vāsuki",
+    "Śaṅkhapāla",
+    "Padma",
+    "Mahāpadma",
+    "Takṣaka",
+    "Karkoṭaka",
+    "Śaṅkhacūḍa",
+    "Ghātaka",
+    "Viṣadhara",
+    "Śeṣanāga"
+   ],
+   "basis": {
+    "refs": [
+     "drik-kundali"
+    ],
+    "status": "convention",
+    "note": "All seven grahas on one side of the Rāhu-Ketu axis; the type is named by Rāhu's house from the lagna. Drik lists twelve types."
+   }
+  },
+  {
+   "id": "guru-chandala",
+   "name": "Guru-Cāṇḍāla Yoga",
+   "type": "conjunct",
+   "a": "Jupiter",
+   "b": [
+    "Rahu",
+    "Ketu"
+   ],
+   "basis": {
+    "refs": [
+     "phaladeepika"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "grahana",
+   "name": "Grahaṇa Doṣa",
+   "type": "conjunct",
+   "a": [
+    "Sun",
+    "Moon"
+   ],
+   "b": [
+    "Rahu",
+    "Ketu"
+   ],
+   "basis": {
+    "refs": [
+     "phaladeepika"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "pitra",
+   "name": "Pitṛ Doṣa",
+   "type": "conjunct",
+   "a": "Sun",
+   "b": [
+    "Rahu"
+   ],
+   "also": {
+    "house": 9,
+    "graha": "Rahu"
+   },
+   "basis": {
+    "refs": [],
+    "status": "popular",
+    "note": "A popular definition without a classical text behind it here: the Sun with Rāhu, or Rāhu in the 9th house."
+   }
+  },
+  {
+   "id": "kemadruma",
+   "name": "Kemadruma Yoga",
+   "type": "kemadruma",
+   "exclude": [
+    "Sun",
+    "Rahu",
+    "Ketu"
+   ],
+   "cancellations": [
+    {
+     "id": "kendra-from-moon",
+     "text": "A graha in a kendra from the Moon",
+     "test": "kendra-from-moon"
+    }
+   ],
+   "basis": {
+    "refs": [
+     "phaladeepika",
+     "bphs"
+    ],
+    "status": "convention",
+    "note": "No graha other than the Sun, Rāhu and Ketu in the 2nd or 12th from the Moon."
+   }
+  },
+  {
+   "id": "sade-sati",
+   "name": "Sāḍe Sātī",
+   "type": "saturn-transit",
+   "houses_from_moon": [
+    12,
+    1,
+    2
+   ],
+   "phases": [
+    "rising",
+    "peak",
+    "setting"
+   ],
+   "basis": {
+    "refs": [
+     "phaladeepika"
+    ],
+    "status": "convention"
+   }
+  },
+  {
+   "id": "dhaiya",
+   "name": "Ḍhaiyā, Kaṇṭaka Śani",
+   "type": "saturn-transit",
+   "houses_from_moon": [
+    4,
+    8
+   ],
+   "basis": {
+    "refs": [
+     "phaladeepika"
+    ],
+    "status": "convention"
+   }
+  }
+ ]
+}
